@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="">Strona główna<span class="sr-only">(</span></a>
+      </li>
+      <li class="nav-item" *ngIf="authService.isLoggedIn()">
+        <a class="nav-link" routerLink="/lista">Lista Kręgielni<span class="sr-only">(</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">Login<span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/signup">Zarejestruj Się<span class="sr-only">(</span></a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right" *ngIf="authService.isLoggedIn()">
+      <li class="button">
+        <button (click)="logOut()" class="btn btn-lg btn-pink btn-block" type="submit" title="Przycisk wyloguj">Wyloguj
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>

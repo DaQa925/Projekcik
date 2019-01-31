@@ -1,0 +1,25 @@
+.kontakty{
+
+  width: 40%;
+  height: 30%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px 50px 50px 50px;
+  border-radius: 50px;
+  border: 2px solid #cbcbcb;
+  box-shadow: 10px 15px 5px #cbcbcb;
+}
+
+.wiek{
+  padding-right: 300px;
+}
+.button{
+  padding-top: 15px;
+
+}
+#buttonContact1, #buttonContact2{
+  background-color: deeppink;
+  border: 1px solid deeppink;
+}
+
+
